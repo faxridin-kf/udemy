@@ -35,6 +35,7 @@ let nameA = Test[testOne];
 enum Dise {
   one = 1,
   two,
+  three,
 }
 function ruDise(dise: Dise) {
   switch (dise) {
@@ -42,5 +43,9 @@ function ruDise(dise: Dise) {
       return console.log("один");
     case Dise.two:
       return console.log("два");
+    case Dise.three:
+      return console.log("три");
+    default:
+      const a: never = dise;
   }
 }
