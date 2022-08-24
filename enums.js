@@ -37,6 +37,7 @@ var Dise;
 (function (Dise) {
     Dise[Dise["one"] = 1] = "one";
     Dise[Dise["two"] = 2] = "two";
+    Dise[Dise["three"] = 3] = "three";
 })(Dise || (Dise = {}));
 function ruDise(dise) {
     switch (dise) {
@@ -44,5 +45,9 @@ function ruDise(dise) {
             return console.log("один");
         case Dise.two:
             return console.log("два");
+        case Dise.three:
+            return console.log("три");
+        default:
+            var a = dise;
     }
 }
